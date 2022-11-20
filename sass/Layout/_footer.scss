@@ -1,0 +1,59 @@
+
+.footer {
+    height: 200px;
+    background-color: #353535;
+    ul{
+      list-style-type: none;
+      padding: 20px;
+      li{
+        padding-bottom: 5px;
+      }
+    }
+
+    a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 15px;
+    }
+  
+    .footer__logo {
+      padding-left: 20px;
+      padding-top: 20px;
+      font-size: 20px;
+      color: #fff;
+      font-family: "shrikhand";
+    }
+    .footer__subtitle{
+      display: flex;
+      font-size: 15px;
+      .footer__subtitle--txt
+      {
+      margin: 0;
+      }
+      .fa-utensils{
+        padding-right: 10px;
+      }
+      .fa-hands-helping {
+          padding-right: 5px;
+      }
+    }
+
+  }
+  
+  /* RESPONSIVE */
+  
+  @media (min-width: 450px) and (max-width : 1600px){
+    .footer{
+      text-align: center;
+      .footer__subtitle
+      {
+        justify-content: center;
+      }
+    }
+  }
+  
+  @media (min-width: 1601px){
+    .footer{
+      text-align: center;
+    }
+  }

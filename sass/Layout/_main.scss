@@ -1,0 +1,21 @@
+.explorer{
+    &__adresse{
+        object-fit: cover;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        background-color: #EAEAEA;
+        font-size: 1.2rem;
+        position: relative;
+        &--search{
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: hidden;
+            background-color: #EAEAEA;
+        }
+        &--search:focus {
+            outline: none;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.header{
+    z-index: 1000;
+    position: relative;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    &__logo{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        &--image{
+            width: 45%;
+        }
+    }
+}
+
+
+/* RESPONSIVE */
+  
+@media (min-width: 450px) and (max-width : 1600px){
+    .header{
+        height: 90px;
+        &__logo{
+            &--image{
+                width: 10%;
+            }
+        }
+    }
+  }
+  
+  @media (min-width: 1601px){
+    .header{
+        height: 90px;
+        &__logo{
+            &--image{
+                width: 10%;
+            }
+        }
+    }
+  }

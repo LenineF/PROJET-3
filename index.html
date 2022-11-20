@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="sass/style.css">
+    <script src="https://kit.fontawesome.com/d4cdf3a34b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+        <a class="header__logo" href="#">
+            <img class="header__logo--image"src="images/logo/ohmyfood.png" alt="ohmyfood">
+        </a>
+    </header>
+
+    <main>
+
+        <!-- explorer -->    
+        <section class="explorer">
+            <address class="explorer__adresse">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <input class="explorer__adresse--search" type='search' placeholder="Paris, Belleville" >
+            </address>
+            <h1 >Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <a class='explorer__bouton'>Explorer nos restaurants</a>
+        </section>
+
+
+        <!-- Fonctionnement -->               
+        <section class="Fonctionnement"> 
+            <h2>Fonctionnement</h2>  
+                <ol>
+                    <li>Choisissez un restaurant</li>
+                    <li>Composez votre menu</li>
+                    <li>Dégustez au restaurant</li>
+                </ol>   
+        </section>    
+
+         <!-- Restaurants -->     
+        <section class='restaurants'>
+            <h2>Restaurants</h2>
+            <div class="card">
+                <a href="#">
+                    <!-- Image à la une -->
+                    <div class="card-image">
+                        <span class='card__lien--nouveau'>Nouveau</span>
+                        <img class="" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                    </div>
+                    <!-- Corp de notre carte -->
+                    <div class="card-body">
+                        <!-- Titre de l'article -->
+                        <div class="card-title">
+                            <h3>La palette du goût</h3>
+                        </div>
+                        <!-- Extrait de l'article -->
+                        <div class="card-extrait">
+                            <p>Ménilmontant</p>
+                        </div>
+                        <!-- le coeur j'aime rose -->
+                        <div class="card-heart">
+                            <i class="far fa-heart coeur--vide"></i>
+                            <span class='coeur__filtre'><i class="fas fa-heart coeur__filtre--plein"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <!-- Image à la une -->
+                    <div class="card-image">
+                        <span class='card__lien--nouveau'>Nouveau</span>
+                        <img class="" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                    </div>
+                    <!-- Corp de notre carte -->
+                    <div class="card-body">
+                        <!-- Titre de l'article -->
+                        <div class="card-title">
+                            <h3>La note enchantée</h3>
+                        </div>
+                        <!-- Extrait de l'article -->
+                        <div class="card-extrait">
+                            <p>Charonne</p>
+                        </div>
+                        <!-- le coeur j'aime rose -->
+                        <div class="card-heart">
+                            <i class="far fa-heart coeur--vide"></i>
+                            <span class='coeur__filtre'><i class="fas fa-heart coeur__filtre--plein"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <!-- Image à la une -->
+                    <div class="card-image">
+                        <img class="" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+                    </div>
+                    <!-- Corp de notre carte -->
+                    <div class="card-body">
+                        <!-- Titre de l'article -->
+                        <div class="card-title">
+                            <h3>À la française</h3>
+                        </div>
+                        <!-- Extrait de l'article -->
+                        <div class="card-extrait">
+                            <p>Cité rouge</p>
+                        </div>
+                        <!-- le coeur j'aime rose -->
+                        <div class="card-heart">
+                            <i class="far fa-heart coeur--vide"></i>
+                            <span class='coeur__filtre'><i class="fas fa-heart coeur__filtre--plein"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <!-- Image à la une -->
+                    <div class="card-image">
+                        <img class="" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                    </div>
+                    <!-- Corp de notre carte -->
+                    <div class="card-body">
+                        <!-- Titre de l'article -->
+                        <div class="card-title">
+                            <h3>Le délice des sens</h3>
+                        </div>
+                        <!-- Extrait de l'article -->
+                        <div class="card-extrait">
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <!-- le coeur j'aime rose -->
+                        <div class="card-heart">
+                            <i class="far fa-heart coeur--vide"></i>
+                            <span class='coeur__filtre'><i class="fas fa-heart coeur__filtre--plein"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class='footer'>
+        <a href="index.html"><h2 class="footer__logo">ohmyfood</h2></a>
+        <ul>
+            <li>
+                <a class="footer__subtitle" href='#'><i class="fas fa-utensils"></i><p class="footer__subtitle--txt">Proposer un restaurant</p></a>
+            </li>
+            <li>
+                <a class="footer__subtitle" href='#'><i class="fas fa-hands-helping"></i><p class="footer__subtitle--txt">Devenir partenaire</p></a>
+            </li>
+            <li>
+                <a href='#'>Mentions légales</a>
+            </li>
+            <li>
+                <a href='mailto:ohmyfoodTest@hotmail.fr' class='lien'>Contact</a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>
