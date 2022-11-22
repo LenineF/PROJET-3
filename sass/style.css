@@ -73,8 +73,63 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
+  display: block;
   font-size: 2em;
-  margin: 0.67em 0;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h4 {
+  display: block;
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h5 {
+  display: block;
+  font-size: 0.83em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h6 {
+  display: block;
+  font-size: 0.67em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
 
 /* Grouping content
@@ -83,6 +138,26 @@ h1 {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
@@ -402,6 +477,19 @@ a {
     width: 10%;
   }
 }
+.explorer {
+  background-color: #F6F6F6;
+  height: 340px;
+}
+.explorer h1 {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+.explorer p {
+  text-align: center;
+  padding: 5px;
+}
 .explorer__adresse {
   height: 50px;
   display: flex;
@@ -425,6 +513,7 @@ a {
   color: #353535;
   display: flex;
   align-items: center;
+  margin-right: 15px;
 }
 
 .footer {
