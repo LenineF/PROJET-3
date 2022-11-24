@@ -2,7 +2,7 @@
 
 .explorer{
     background-color: #F6F6F6;
-    height: 340px;
+    height: 380px;
 
     &__adresse{
         height: 50px;
@@ -70,6 +70,8 @@
 }
 
 .Fonctionnement{
+    margin-top: 40px;
+    margin-bottom: 40px;
     &__title{
         margin-left: 20px;
     }
@@ -77,6 +79,8 @@
     &__Liste{
         display: flex;
         flex-direction: column;
+        counter-reset: num;
+
         &--objet{
             padding: 30px;
             margin-bottom: 20px;
@@ -84,13 +88,110 @@
             margin-left: 35px;
             border-radius: 20px;
             background-color: #F6F6F6;
-            box-shadow: 0 5px 16px #0000002e;
+            box-shadow: 0 1px 15px #0000002e;
+            counter-increment: num;
+            .fas{
+                color: #8D8D8D;
+            }
         }
+        &--objet::marker{
+            content: "" counter(num); //supprime le point après les numeros
+            font-weight: bold;
+            color: $colorPrimaire;
+            font-size: 20px;
+            
+        }
+
         &--link{
             color: #000;
-            font-weight: 800;
+            font-weight: 450;
             text-decoration: none;
             padding-left: 20px;
         }
     }
 }
+
+.Restaurants{
+    background-color: #F6F6F6;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__title{
+        margin-left: 20px;
+    }
+
+    &__card{
+        &--link{
+            text-decoration: none;
+            color: #000;
+        }
+
+        display: flex;
+        border-radius: 15px;
+        box-shadow: 0 5px 16px #0000002e;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+
+        &--image img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover !important;
+            border-radius: 20px 20px 0 0;
+        }
+
+        &--body
+        {
+            height: 65px;
+            margin-left: 20px;
+
+            &-title{
+                margin-top: 10px;
+                margin-bottom: 2px;
+            }
+            &-heart{
+                color: $colorPrimaire;
+                //font-weight: 100 !important;
+                font-style: italic;
+                font-size: 25px;
+                display: flex;
+                flex-direction: row-reverse;
+                margin: -40px 30px 0px 0px;
+            }
+            &-heart i{
+                font-style: italic;
+                &:hover{
+                    color: $colorPrimaire;
+                    font-weight: 800;
+                }
+
+            }
+        }
+
+        &--nouveauSpan{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 6px 12px;
+            font-weight: 500;
+            font-size: 14px;
+            color: #008766;
+            background: #99E2D0;
+            border-radius: 2px;
+            
+        }
+
+
+
+    }
+
+
+}
+
+/*@media (min-width: 450px) and (max-width : 1600px){
+
+    .Fonctionnement__Liste{
+        flex-direction: row;
+    }
+}*/
