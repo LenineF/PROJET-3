@@ -82,6 +82,7 @@
         counter-reset: num;
 
         &--objet{
+            list-style-type: none;
             padding: 30px;
             margin-bottom: 20px;
             margin-right: 20px;
@@ -94,12 +95,21 @@
                 color: #8D8D8D;
             }
         }
-        &--objet::marker{
-            content: "" counter(num); //supprime le point après les numeros
-            font-weight: bold;
-            color: $colorPrimaire;
-            font-size: 20px;
-            
+        &--objet::before{
+            display: flex;
+            width: 25px;
+            height: 25px;
+            content: "" counter(num);
+            color: #fff;
+            font-size: 16px;
+            background: $colorPrimaire;
+            border-radius: 100px;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            margin-left: -45px;
+            margin-top: -4px;
+
         }
 
         &--link{
@@ -195,3 +205,32 @@
         flex-direction: row;
     }
 }*/
+
+@media (min-width: 1601px){
+    .Fonctionnement{
+        &__title {
+            text-align: center;
+          }
+        &__Liste{
+            flex-direction: row;
+            justify-content: center;
+        }
+
+    }
+
+    .Restaurants{
+        &__card {
+            display: block;
+
+            &--image img {
+                height: 350px;
+            }
+
+            &--body {
+                text-align: center;
+            }
+        }
+
+    }
+
+}
