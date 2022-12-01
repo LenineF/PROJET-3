@@ -2,8 +2,13 @@
 .footer {
     height: 200px;
     background-color: #353535;
+    a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 15px;
+    }
 
-    .footer__logo {
+    &__logo {
       padding-left: 20px;
       padding-top: 20px;
       margin-top: 0;
@@ -12,7 +17,7 @@
       font-family: "shrikhand";
     }
 
-    ul{
+    &__Lien{
       list-style-type: none;
       padding: 20px;
       li{
@@ -20,16 +25,10 @@
       }
     }
 
-    a{
-      text-decoration: none;
-      color: #fff;
-      font-size: 15px;
-    }
-
-    .footer__subtitle{
+    &__subtitle{
       display: flex;
       font-size: 15px;
-      .footer__subtitle--txt
+      &--txt
       {
       margin: 0;
       }
@@ -48,9 +47,10 @@
   @media (min-width: 450px) and (max-width : 1600px){
     .footer{
       text-align: center;
-      .footer__subtitle
-      {
-        justify-content: center;
+
+      &__Lien{
+        display: flex;
+        justify-content: space-evenly;
       }
     }
   }
@@ -58,5 +58,10 @@
   @media (min-width: 1601px){
     .footer{
       text-align: center;
+
+      &__Lien{
+        display: flex;
+        justify-content: space-evenly;
+      }
     }
   }

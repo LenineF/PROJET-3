@@ -8,41 +8,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/style.css">
     <script src="https://kit.fontawesome.com/d4cdf3a34b.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header class="header">
-        <div class="logo">
-            <a href="#">
-                <img src="images/logo/ohmyfood.png" alt="ohmyfood">
-            </a>
-        </div>
-        <nav class="navigation">
+        <nav class="header__navigation">
             <ul>
                 <li><a href="#"><i class="fas fa-arrow-left"></i></a></li>
             </ul>
         </nav>
+        <a class="header__logo" href="#">
+            <img class="header__logo--image"src="images/logo/ohmyfood.png" alt="ohmyfood">
+        </a>
+    </header>
+        
     </header>
 
     <main>
-        <section>
-            <article class="card-article">
-                <img  src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">   
-                <div class='card-article__texte'> 
-                    <h2>À la française</h2>
-                    <!-- selection j'aime -->
-                    <i class="far fa-heart coeur--vide"></i>
-                    <span class='coeur__filtre'><i class="fas fa-heart coeur__filtre--plein"></i></span>
-                    
-                </div>
-            </article>
-
-            <article class="entrees">
-                <h2>ENTREES</h2>
-                <ul>
-                    <li>
+        <img class="img_francaise"  src="images/restaurants/A-la-française.jpg" alt="À la française">   
+        <section class="menu">
+            <h2 class="menu__title">À la française</h2>
+            <!--coeur avec les css predefinis-->
+            <div class="Restaurants__card--body-heart"><i class="far fa-heart"></i></div>
+            <article class="menu__liste">
+                <h2 class="menu__liste--title">Entrée</h2>
+                <ul class="menu__liste--content">
+                    <li class="menu__liste--content--item">
                         <h3>Tartare de poulpe acidulé</h3>
                         <p>Aux zestes d'orange</p>
                         <strong>25€</strong>
