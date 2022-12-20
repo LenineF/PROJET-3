@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css">
     <script src="https://kit.fontawesome.com/d4cdf3a34b.js" crossorigin="anonymous"></script>
 </head>
@@ -23,87 +23,95 @@
 
         <!-- explorer -->    
         <section class="explorer">
-            <address class="explorer__adresse">
+            <form class="explorer__adresse"> 
                 <i class="fas fa-map-marker-alt explorer__adresse--icon" aria-hidden="true"></i>
+                
                 <input class="explorer__adresse--search" type='search' placeholder="Paris, Belleville" >
-            </address>
+            </form>
             <h1 >Réservez le menu qui vous convient</h1>
+
+            
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <a class="explorer__btn">Explorer nos restaurants</a>
+            
+            <a class="explorer__btn" href="#pour_restaurent">Explorer nos restaurants</a>
         </section>
 
-
-        <!-- Fonctionnement -->               
-        <section class="Fonctionnement"> 
-            <h2 class="Fonctionnement__title">Fonctionnement</h2>  
-            <ol class="Fonctionnement__Liste">
-                <li class="Fonctionnement__Liste--objet"><i class="fas fa-mobile-alt"></i><a href="#" class="Fonctionnement__Liste--link">Choisissez un restaurant</a></li>
-                <li class="Fonctionnement__Liste--objet"><i class="fas fa-list-ul"></i><a href="#" class="Fonctionnement__Liste--link">Composez votre menu</a></li>
-                <li class="Fonctionnement__Liste--objet"><i class="fas fa-store"></i><a href="#" class="Fonctionnement__Liste--link">Dégustez au restaurant</a></li>
+        <!-- fonctionnement -->               
+        <section class="fonctionnement"> 
+            <h2 class="fonctionnement__title">fonctionnement</h2>  
+            <ol class="fonctionnement__liste">
+                <li class="fonctionnement__liste--objet"><i class="fas fa-mobile-alt"></i><a href="#" class="fonctionnement__liste--link">Choisissez un restaurant</a></li>
+                <li class="fonctionnement__liste--objet"><i class="fas fa-list-ul"></i><a href="#" class="fonctionnement__liste--link">Composez votre menu</a></li>
+                <li class="fonctionnement__liste--objet"><i class="fas fa-store"></i><a href="#" class="fonctionnement__liste--link">Dégustez au restaurant</a></li>
             </ol>   
         </section>    
 
-         <!-- Restaurants -->     
-        <section class="Restaurants">
-            <h2 class="Restaurants__title">Restaurants</h2>
-            <div class="Restaurants__card">
-                <a class="Restaurants__card--link" href="la_palette_du_gout.html">
-                    <div class="Restaurants__card--image">
-                        <span class="Restaurants__card--nouveauSpan">Nouveau</span>
+         <!-- restaurants -->     
+        <section class="restaurants" id="pour_restaurent">
+            <h2 class="restaurants__title">restaurants</h2>
+            <div class="restaurants__card">
+                <div class="restaurants__card--image">
+                    <span class="restaurants__card--nouveauSpan">Nouveau</span>
+                    <a class="restaurants__card--link" href="la_palette_du_gout.html">
                         <img src="images/restaurants/La-palette-du-goût.jpg" alt="La palette du goût">
-                    </div>
-                    <div class="Restaurants__card--body">
-                        <h3 class="Restaurants__card--body-title">La palette du goût</h3>
-                        <p class="Restaurants__card--body-extrait">Ménilmontant</p>
-                        <div class="Restaurants__card--body-heart">
-                            <i class="far fa-heart"></i>
-                        </div>
-                    </div>
+                    </a>
+                </div>
+                <div class="restaurants__card--body">
+                <a class="restaurants__card--link" href="la_palette_du_gout.html">
+                    <h3 class="restaurants__card--body-title">La palette du goût</h3>
                 </a>
+                    <p class="restaurants__card--body-extrait">Ménilmontant</p>
+                </div>
+                
+                <button class="restaurants__card--heart">
+                   <i class="far fa-heart"></i>  
+                </button>   
+
+                
             </div>
 
-            <div class="Restaurants__card">
-                <a class="Restaurants__card--link" href="la_note_enchantee.html">
-                    <div class="Restaurants__card--image">
-                        <span class="Restaurants__card--nouveauSpan">Nouveau</span>
+            <div class="restaurants__card">
+                <a class="restaurants__card--link" href="la_note_enchantee.html">
+                    <div class="restaurants__card--image">
+                        <span class="restaurants__card--nouveauSpan">Nouveau</span>
                         <img src="images/restaurants/La-note-enchantée.jpg" alt="La note enchantée">
                     </div>
-                    <div class="Restaurants__card--body">
-                        <h3 class="Restaurants__card--body-title">La note enchantée</h3>
-                        <p class="Restaurants__card--body-extrait">Charonne</p>
-                        <div class="Restaurants__card--body-heart">
+                    <div class="restaurants__card--body">
+                        <h3 class="restaurants__card--body-title">La note enchantée</h3>
+                        <p class="restaurants__card--body-extrait">Charonne</p>
+                        <div class="restaurants__card--body-heart">
                             <i class="far fa-heart"></i>
                         </div>
                     </div>
                 </a>
             </div>
 
-            <div class="Restaurants__card">
-                <a class="Restaurants__card--link" href="a_la_française.html">
-                    <div class="Restaurants__card--image">
-                        <!-- <span class="Restaurants__card--nouveauSpan">Nouveau</span> -->
+            <div class="restaurants__card">
+                <a class="restaurants__card--link" href="a_la_française.html">
+                    <div class="restaurants__card--image">
+                        <!-- <span class="restaurants__card--nouveauSpan">Nouveau</span> -->
                         <img src="images/restaurants/A-la-française.jpg" alt="À la française">
                     </div>
-                    <div class="Restaurants__card--body">
-                        <h3 class="Restaurants__card--body-title">À la française</h3>
-                        <p class="Restaurants__card--body-extrait">Cité rouge</p>
-                        <div class="Restaurants__card--body-heart">
+                    <div class="restaurants__card--body">
+                        <h3 class="restaurants__card--body-title">À la française</h3>
+                        <p class="restaurants__card--body-extrait">Cité rouge</p>
+                        <div class="restaurants__card--body-heart">
                             <i class="far fa-heart"></i>
                         </div>
                     </div>
                 </a>
             </div>
 
-            <div class="Restaurants__card">
-                <a class="Restaurants__card--link" href="le_delice_des_sens.html">
-                    <div class="Restaurants__card--image">
-                        <!-- <span class="Restaurants__card--nouveauSpan">Nouveau</span> -->
+            <div class="restaurants__card">
+                <a class="restaurants__card--link" href="le_delice_des_sens.html">
+                    <div class="restaurants__card--image">
+                        <!-- <span class="restaurants__card--nouveauSpan">Nouveau</span> -->
                         <img src="images/restaurants/Le-délice-des-sens.jpg" alt="Le délice des sens">
                     </div>
-                    <div class="Restaurants__card--body">
-                        <h3 class="Restaurants__card--body-title">Le délice des sens</h3>
-                        <p class="Restaurants__card--body-extrait">Folie-Méricourt</p>
-                        <div class="Restaurants__card--body-heart">
+                    <div class="restaurants__card--body">
+                        <h3 class="restaurants__card--body-title">Le délice des sens</h3>
+                        <p class="restaurants__card--body-extrait">Folie-Méricourt</p>
+                        <div class="restaurants__card--body-heart">
                             <i class="far fa-heart"></i>
                         </div>
                     </div>
@@ -116,6 +124,7 @@
         <a href="index.html"><h2 class="footer__logo">ohmyfood</h2></a>
         <ul class='footer__Lien'>
             <li>
+                <!-- pas besoin du p -->
                 <a class="footer__subtitle" href='#'><i class="fas fa-utensils"></i><p class="footer__subtitle--txt">Proposer un restaurant</p></a>
             </li>
             <li>
