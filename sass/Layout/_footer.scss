@@ -17,7 +17,7 @@
       font-family: "shrikhand";
     }
 
-    &__Lien{
+    &__lien{
       list-style-type: none;
       padding: 20px;
       li{
@@ -44,24 +44,26 @@
   
   /* RESPONSIVE */
   
-  @media (min-width: 450px) and (max-width : 1600px){
+  @media (min-width: 768px){
     .footer{
       text-align: center;
+      &__logo{
+        padding-left: 0;
+        padding-top: 40px;
+      }
 
-      &__Lien{
+      &__lien{
         display: flex;
         justify-content: space-evenly;
       }
     }
   }
   
-  @media (min-width: 1601px){
+  @media (min-width: 1025px) {
     .footer{
-      text-align: center;
-
-      &__Lien{
-        display: flex;
-        justify-content: space-evenly;
+      &__logo{
+        padding-left: 0;
+        
       }
     }
   }

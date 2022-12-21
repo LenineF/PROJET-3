@@ -1,3 +1,5 @@
+
+
 .header{
     z-index: 1000;
     position: relative;
@@ -19,18 +21,27 @@
 
 /* RESPONSIVE */
   
-@media (min-width: 450px) and (max-width : 1600px){
+@media (min-width: 768px){
+    .pagelayout {
+        width: 100%;
+    }
+
     .header{
         height: 90px;
         &__logo{
             &--image{
-                width: 10%;
+                width: 22%;
             }
         }
     }
-  }
+}
   
-  @media (min-width: 1601px){
+@media (min-width: 1025px) {
+    .pagelayout{
+        width: 98%;
+        max-width: 1440px;
+        margin: auto;
+    }
     .header{
         height: 90px;
         &__logo{
@@ -39,4 +50,4 @@
             }
         }
     }
-  }
+}

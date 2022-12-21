@@ -8,10 +8,13 @@
         height: 50px;
         display: flex;
         justify-content: center;
+        align-items: center;
         color: #353535;
         background-color: #EAEAEA;
+        font-family: "roboto";
         font-size: 1.2rem;
-        position: relative;
+        
+
         &--search{
             border-top-style: hidden;
             border-right-style: hidden;
@@ -22,11 +25,13 @@
         &--search:focus {
             outline: none;
         }
-        .explorer__adresse--icon{
+        
+        &--icon{
             color: #353535;
             display: flex;
             align-items: center;
             margin-right:15px;
+            margin-left: 100px;
         }
         
     }
@@ -137,14 +142,21 @@
         &--heart{
             color: $colorPrimaire;
             //font-weight: 100 !important;
-            width: 35px;
             border: 0;
             background: transparent;
             font-size: 25px;
             display: flex;
             flex-direction: row-reverse;
-            margin: -40px 30px 0px 0px;
+            margin: -40px 20px 20px 0px;
         }
+
+        &--heart:focus{
+            .fa-heart{
+                font-weight: 800;
+            }
+            
+        }
+
         &--heart i{
             &:hover{
                 color: $colorPrimaire;
@@ -186,6 +198,7 @@
 
 
         &--nouveauSpan{
+            font-family: "roboto";
             position: absolute;
             top: 10px;
             right: 10px;
@@ -206,22 +219,14 @@
 }
 
 
-
-/*@media screen and (min-width: 1200px) {
-
-    .fonctionnement__liste{
-        flex-direction: row;
-    }
-}*/
-
-@media (min-width: 769px){
+@media (min-width: 768px){
     .fonctionnement{
         &__title {
             text-align: center;
           }
         &__liste{
-            flex-direction: row;
-            justify-content: center;
+            flex-direction: column;
+            text-align: center;
         }
 
     }
@@ -236,12 +241,18 @@
             display: flex;
             width: fit-content;
             margin-top: 50px;
+
             &--image img {
                 height: 350px;
             }
 
             &--body {
-                text-align: center;
+                text-align: left;
+                font-size: 13px;
+            }
+
+            &--heart {
+                margin: -30px 10px 20px 0px;
             }
         }
 
@@ -249,27 +260,39 @@
 }
 
 
-@media only screen and (min-width: 375px) and (max-width: 768px){
-    
-    .restaurants{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        &__card {
-            display: flex;
-            width: fit-content;
-
-            &--image img {
-                height: 350px;
-            }
-
-            &--body {
-                text-align: center;
-            }
+@media (min-width: 1025px) {
+    .fonctionnement{
+        &__title {
+            text-align: center;
+            margin-left: 0;
+          }
+        &__liste{
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
         }
 
     }
 
+    .restaurants{
+        &__card {
+            &--body {
+                font-size: 16px;
 
+            }
+
+            &--heart {
+                margin: -40px 20px 20px 0px;
+            }
+        }
+    }
+
+
+    .explorer{
+        &__adresse{
+            &--icon {
+                margin-left: 80px;
+            }
+        }
+    }
 }
