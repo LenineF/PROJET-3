@@ -472,7 +472,7 @@ a {
     height: 90px;
   }
   .header__logo--image {
-    width: 10%;
+    width: 14%;
   }
 }
 .explorer {
@@ -708,6 +708,9 @@ a {
     margin-left: 80px;
   }
 }
+.header__navigation--main {
+  list-style: none;
+}
 .header__navigation--main-lien {
   text-decoration: none;
   color: #000;
@@ -718,7 +721,7 @@ a {
   font-size: 25px;
 }
 
-.img_FoodMain {
+.img_foodmain {
   height: auto;
   width: 100%;
   max-height: 300px;
@@ -740,8 +743,6 @@ a {
 .menu__title {
   font-family: "Shrikhand";
   font-size: 25px;
-  padding-left: 40px;
-  padding-bottom: 40px;
 }
 .menu .Restaurants__card--body-heart {
   margin: -50px 30px 0px 0px;
@@ -811,22 +812,38 @@ a {
   filter: brightness(1.1);
 }
 
-@media screen and (min-width: 769px) {
+@media (min-width: 768px) {
+  .img_foodmain {
+    max-height: 350px;
+  }
   .menu {
-    padding: 50px 100px;
+    padding: 0 100px;
+  }
+  .menu__title {
+    padding-left: 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1025px) {
   .menu {
+    padding: 20px 0px 100px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
+  .menu .restaurants__card--heart {
+    position: absolute;
+    margin: 20px -450px 0px 800px;
+  }
   .menu__title {
     width: 100%;
+    text-align: center;
   }
   .menu__liste {
-    padding: 20px;
+    padding: 30px;
+  }
+  .menu__commanderBtn {
+    position: absolute;
+    margin-top: 480px;
   }
 }
 .footer {
@@ -883,6 +900,7 @@ a {
 }
 @media (min-width: 1025px) {
   .footer__logo {
+    font-size: 35px;
     padding-left: 0;
   }
 }
