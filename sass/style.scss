@@ -1,8 +1,11 @@
 @import "Base/minireset";
 @import "Base/normalize";
-@import "Base/polices.scss";
+@import "Base/polices";
 @import "utils/variables";
+@import "Base/loading";
 @import "Layout/header";
 @import "Layout/main";
 @import "Pages/menuRestaurent";
 @import "Layout/footer";
+
+
