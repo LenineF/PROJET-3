@@ -151,7 +151,7 @@ ul {
   display: block;
   list-style-type: disc;
   margin-top: 1em;
-  margin-bottom: 1 em;
+  margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
 }
@@ -913,8 +913,8 @@ a {
   text-overflow: ellipsis;
   -webkit-animation-name: appear;
           animation-name: appear;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
