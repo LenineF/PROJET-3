@@ -34,7 +34,6 @@
         }
         
     }
-
     
     h1{
         text-align: center;
@@ -47,30 +46,7 @@
         padding: 5px;
     }
 
-    
-    &__btn{
-        font-family: "Roboto", sans-serif;
-        width: 250px;
-        display: flex;
-        background-image: linear-gradient(355deg,$colorSecondaire,$colorPrimaire) ;
-        border-radius: 30px;
-        padding: 16px 24px;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 40px;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-
-        &:hover{
-            box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
-            filter: brightness(1.1);
-        }
-    }
+    @import "Components/btn";
 }
 
 .fonctionnement{
