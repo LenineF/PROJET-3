@@ -698,13 +698,28 @@ a {
   margin-bottom: 20px;
 }
 .restaurants__card--heart {
-  color: #9356DC;
   border: 0;
   background: transparent;
   font-size: xx-large;
   display: flex;
   flex-direction: row-reverse;
-  margin: -40px 20px 20px 0px;
+  margin: -50px 20px 20px 0px;
+}
+.restaurants__card--heart i {
+  background-color: #9356DC;
+  background-image: linear-gradient(45deg, #FF79DA, #9356DC);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.restaurants__card--heart i:hover {
+  color: #9356DC;
+  font-weight: 800;
+  transform: scale(1.3);
+  transition: all 750ms;
 }
 .restaurants__card--heart:focus .fa-heart {
   -webkit-animation: fill 3s;
@@ -715,8 +730,11 @@ a {
   transform: scale(1.3);
   transition: all 750ms;
 }
-.restaurants__card--heart i:hover {
-  color: #9356DC;
+.restaurants__card--heart:active .fa-heart {
+  -webkit-animation: fill 3s;
+          animation: fill 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   font-weight: 800;
   transform: scale(1.3);
   transition: all 750ms;
