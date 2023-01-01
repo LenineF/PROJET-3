@@ -434,12 +434,14 @@ a {
 
 .loader {
   z-index: 20;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fff;
   width: 100%;
+  top: 0;
+  left: 0;
   height: 100%;
 }
 
@@ -952,6 +954,7 @@ a {
 .menu__liste--content--item-text-description-prix {
   font-family: "Roboto";
   font-weight: bold;
+  margin-right: 5px;
 }
 .menu__liste--content--item-checkbox {
   flex: 0%;
@@ -998,6 +1001,16 @@ a {
   background-color: #99E2D0;
   cursor: pointer;
   color: #f6f6f6;
+}
+.menu .menu__liste--content--item:active > .menu__liste--content--item-checkbox {
+  flex: 25%;
+  transform: translateX(0px);
+  background-color: #99E2D0;
+  cursor: pointer;
+  color: #f6f6f6;
+}
+.menu .menu__liste--content--item:active .fa-check-circle {
+  transform: rotate(0deg);
 }
 .menu .menu__liste--content--item:hover .fa-check-circle {
   transform: rotate(0deg);

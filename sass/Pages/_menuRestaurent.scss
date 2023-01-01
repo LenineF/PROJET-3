@@ -138,6 +138,7 @@
                         &-prix{
                             font-family: "Roboto";
                             font-weight: bold;
+                            margin-right: 5px;
                         }
                     }
                 }
@@ -190,6 +191,18 @@
         color: #f6f6f6;
     }
 
+    .menu__liste--content--item:active > .menu__liste--content--item-checkbox {
+        flex: 25%;
+        transform: translateX(0px);
+        background-color: $colorTertiare;
+        cursor: pointer;
+        color: #f6f6f6;
+    }
+
+    .menu__liste--content--item:active .fa-check-circle {
+        transform: rotate(0deg);
+    }
+    
     .menu__liste--content--item:hover .fa-check-circle {
         transform: rotate(0deg);
     }
